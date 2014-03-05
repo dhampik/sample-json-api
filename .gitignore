@@ -18,3 +18,8 @@
 # Ignore IDEA project files
 /.idea
 *.iml
+
+# Ignore uploaded files
+/public/system
+# Ignore compiled assets
+/public/assets
