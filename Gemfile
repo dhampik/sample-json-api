@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.0.rc1'
+gem 'rails', '4.0.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.1'
@@ -25,11 +25,6 @@ gem 'paperclip', '4.1.1'
 group :production do
   gem 'pg', '0.17.1'
   gem 'passenger', '4.0.37'
-end
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-group :development do
-  gem 'spring', '1.1.2'
 end
 
 group :development, :test do

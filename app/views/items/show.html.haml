@@ -1,0 +1,19 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @item.name
+%p
+  %b Desc:
+  = @item.desc
+
+%p
+  %b
+    Image:
+    - is_image_exist = @item.image? && File.exists?(@item.image.path)
+    - if is_image_exist
+      = image_tag @item.image.url(:thumb)
+
+= link_to 'Edit', edit_item_path(@item)
+\|
+= link_to 'Back', items_path
