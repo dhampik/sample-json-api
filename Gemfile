@@ -27,10 +27,8 @@ group :production do
   gem 'passenger', '4.0.37'
 end
 
-group :development, :test do
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '1.3.9'
-end
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', '1.3.9'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
